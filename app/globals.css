@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-paper: 253 251 247;
+  --color-pencil: 45 45 45;
+  --color-muted: 229 224 216;
+  --color-accent: 255 77 77;
+  --color-pen: 45 93 161;
+  --color-surface: 255 255 255;
+  --paper-dot: 229 224 216;
+}
+
+.dark {
+  --color-paper: 22 24 28;
+  --color-pencil: 241 241 241;
+  --color-muted: 56 60 68;
+  --color-accent: 255 98 98;
+  --color-pen: 126 172 235;
+  --color-surface: 32 36 42;
+  --paper-dot: 52 56 63;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 120%;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 130%;
+  }
+}
+
+body {
+  @apply bg-paper text-pencil font-body leading-[1.45] transition-colors duration-200;
+  background-image: radial-gradient(rgb(var(--paper-dot)) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+li {
+  @apply leading-relaxed;
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-8;
+}
+
+.section {
+  @apply py-14 md:py-20;
+}
+
+.card {
+  @apply relative border-[3px] border-pencil bg-white p-5 md:p-7 shadow-hand-soft transition-all duration-100 will-change-transform hover:-translate-y-0.5 hover:rotate-1 hover:shadow-hand hover:z-10;
+  border-radius: 18px 34px 22px 28px / 24px 20px 30px 16px;
+}
+
+.btn-primary {
+  @apply inline-flex min-h-12 items-center justify-center border-[3px] border-pencil bg-white px-4 py-2 text-base text-pencil shadow-hand transition-all duration-100 hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-accent hover:text-white hover:shadow-[2px_2px_0px_0px_#2d2d2d] active:translate-x-1 active:translate-y-1 active:shadow-none;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.btn-secondary {
+  @apply inline-flex min-h-12 items-center justify-center border-[3px] border-pencil bg-muted px-4 py-2 text-base text-pencil shadow-hand transition-all duration-100 hover:translate-x-[2px] hover:translate-y-[2px] hover:bg-pen hover:text-white hover:shadow-[2px_2px_0px_0px_#2d2d2d] active:translate-x-1 active:translate-y-1 active:shadow-none;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.input {
+  @apply mt-1 w-full border-2 border-pencil bg-white px-4 py-3 text-base text-pencil placeholder:text-pencil/40 focus:border-pen focus:outline-none focus:ring-2 focus:ring-pen/20;
+  border-radius: 18px 34px 22px 28px / 24px 20px 30px 16px;
+}
+
+.heading-note {
+  @apply font-heading font-bold tracking-wide leading-[1.15];
+}
+
+.scribble-underline {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: rgb(var(--color-pencil));
+  text-underline-offset: 5px;
+}
+
+.sketch-frame {
+  @apply border-[3px] border-dashed border-pencil bg-white;
+  border-radius: 30px 12px 26px 18px / 14px 28px 16px 30px;
+}
+
+.postit {
+  @apply border-[3px] border-pencil bg-[#fff9c4] px-4 py-2 text-sm;
+  border-radius: 18px 30px 16px 24px / 12px 22px 18px 28px;
+}
+
+@layer base {
+  .dark .bg-white {
+    background-color: rgb(var(--color-surface)) !important;
+  }
+
+  .dark .postit {
+    background-color: #d8c56b;
+    color: #121212;
+    border-color: #121212;
+  }
+}
