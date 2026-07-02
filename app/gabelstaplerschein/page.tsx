@@ -1,4 +1,4 @@
-﻿import { CtaBlock } from "@/components/cta-block";
+import { CtaBlock } from "@/components/cta-block";
 import { buildMetadata } from "@/lib/seo";
 import { BadgeCheck, Clock3, Users, Wrench } from "lucide-react";
 import { wobblyMd, wobblySm } from "@/lib/design";
@@ -17,7 +17,7 @@ export default function GabelstaplerscheinPage() {
           <h1 className="heading-note text-4xl md:text-5xl">Berufsorientierung</h1>
 
           <h2 className="mt-6 heading-note text-2xl md:text-3xl">Berufsfelderkundung und Berufsfelderprobung</h2>
-          <p className="mt-2 card -rotate-1 text-sm" style={{ borderRadius: wobblyMd }}><span className="inline-flex h-9 w-9 items-center justify-center border-[3px] border-pencil bg-white mb-2 mr-3" style={{ borderRadius: wobblySm }}><Wrench size={17} strokeWidth={2.8} /></span>Praxisnahe berufliche Orientierung an den Standorten Muehlhausen und Bad Langensalza im Bildungsverbund.</p>
+          <p className="mt-2 card -rotate-1 text-sm" style={{ borderRadius: wobblyMd }}><span className="inline-flex h-9 w-9 items-center justify-center border-[3px] border-pencil bg-white mb-2 mr-3" style={{ borderRadius: wobblySm }}><Wrench size={17} strokeWidth={2.8} /></span>Praxisnahe berufliche Orientierung an den Standorten Musterstadt und Nachbarstadt im Bildungsverbund.</p>
 
           <h2 className="mt-6 heading-note text-2xl md:text-3xl">Potentialanalyse</h2>
           <p className="mt-2 card rotate-1 text-sm" style={{ borderRadius: wobblyMd }}><span className="inline-flex h-9 w-9 items-center justify-center border-[3px] border-pencil bg-white mb-2 mr-3" style={{ borderRadius: wobblySm }}><Clock3 size={17} strokeWidth={2.8} /></span>Ermittlung von Kompetenzen und Leistungspotentialen fuer Schuelerinnen und Schueler als Teil der praxisnahen Berufsorientierung.</p>

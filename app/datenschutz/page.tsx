@@ -1,9 +1,9 @@
-﻿import { buildMetadata } from "@/lib/seo";
+import { buildMetadata } from "@/lib/seo";
 import { wobblyMd } from "@/lib/design";
 
 export const metadata = buildMetadata({
   title: "Datenschutzerklaerung",
-  description: "Datenschutzerklaerung gemaess den veroeffentlichten Angaben auf bz-muehlhausen.de.",
+  description: "Datenschutzerklaerung gemaess den gesetzlichen Vorgaben.",
   path: "/datenschutz"
 });
 

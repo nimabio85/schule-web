@@ -1,6 +1,7 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import { ArrowRight, BadgeCheck, Bus, Car, Truck, Wrench } from "lucide-react";
 import { CtaBlock } from "@/components/cta-block";
+import { ScrollDrawingArrow } from "@/components/scroll-drawing-arrow";
 import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import { hardShadowLg, wobblyMd, wobblySm } from "@/lib/design";
@@ -8,7 +9,7 @@ import { hardShadowLg, wobblyMd, wobblySm } from "@/lib/design";
 export const metadata = buildMetadata({
   title: "Homepage",
   description:
-    "Aktuelle Kurse, Bildungsgaenge und Kontaktinformationen des Bildungszentrums Handel/Gewerbe/Freie Berufe e.V. in Muehlhausen.",
+    "Aktuelle Kurse, Bildungsgaenge und Kontaktinformationen des Muster-Bildungszentrum e.V. in Musterstadt.",
   path: "/"
 });
 
@@ -17,18 +18,18 @@ export default function HomePage() {
     <>
       <section className="section">
         <div className="container-page">
-          <p className="postit inline-block -rotate-2">Notiz</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="postit inline-block -rotate-2">Notiz</p>
+            <span className="inline-block border-[3px] border-pencil bg-accent text-white font-heading font-bold text-sm px-3 py-1 shadow-hand-soft rotate-3 animate-bounce" style={{ borderRadius: wobblySm }}>
+              ✓ Online-Anmeldung aktiv!
+            </span>
+          </div>
           <h1 className="mt-3 heading-note text-4xl md:text-6xl">{siteConfig.websiteName} <span className="inline-block rotate-6">!</span></h1>
           <p className="mt-3 text-base md:text-lg">{siteConfig.tagline}</p>
           <p className="mt-3 text-sm">{siteConfig.purpose}</p>
           <p className="mt-3 text-sm"><strong>Target audience:</strong> {siteConfig.targetAudience}</p>
           <p className="mt-3 text-sm"><strong>Industry:</strong> {siteConfig.industry}</p>
-          <div className="mt-4 hidden md:block">
-            <svg width="180" height="60" viewBox="0 0 180 60" fill="none" aria-hidden="true">
-              <path d="M2 10 C 50 40, 100 0, 175 30" stroke="#2d2d2d" strokeWidth="3" strokeDasharray="6 6" />
-              <path d="M160 22 L175 30 L158 36" stroke="#2d2d2d" strokeWidth="3" />
-            </svg>
-          </div>
+          <ScrollDrawingArrow />
         </div>
       </section>
 
@@ -73,7 +74,7 @@ export default function HomePage() {
           <h2 className="heading-note text-3xl md:text-4xl">Entdecke deine Chancen</h2>
           <p className="mt-3 text-sm"><strong>Schulabschluss:</strong> Die besondere Chance fuer den Einstieg in die Zukunft.</p>
           <p className="mt-2 text-sm"><strong>Berufsausbildung:</strong> Wir bilden im Auftrag der Agentur fuer Arbeit in den Bereichen Handel, Lager, Gastronomie und Hauswirtschaft aus.</p>
-          <p className="mt-2 text-sm"><strong>Berufsorientierung:</strong> Berufsfelderkundung und Berufsfelderprobung in Muehlhausen und Bad Langensalza.</p>
+          <p className="mt-2 text-sm"><strong>Berufsorientierung:</strong> Berufsfelderkundung und Berufsfelderprobung in Musterstadt und Nachbarstadt.</p>
           <p className="mt-2 text-sm"><strong>Weiterbildung:</strong> Angebote in Vollzeit und berufsbegleitend, auch fuer Mitarbeiterqualifizierung.</p>
         </div>
       </section>

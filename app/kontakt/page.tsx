@@ -1,4 +1,4 @@
-﻿import { ContactForm } from "@/components/contact-form";
+import { ContactForm } from "@/components/contact-form";
 import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -6,7 +6,7 @@ import { wobblyMd, wobblySm } from "@/lib/design";
 
 export const metadata = buildMetadata({
   title: "Kontakt",
-  description: "Kontakt zum Bildungszentrum Handel/Gewerbe/Freie Berufe e.V. in Muehlhausen.",
+  description: "Kontakt zum Muster-Bildungszentrum e.V. in Musterstadt.",
   path: "/kontakt"
 });
 
@@ -23,13 +23,13 @@ export default function KontaktPage() {
 
           <h2 className="mt-6 heading-note text-2xl">Weitere Kontaktmoeglichkeiten</h2>
           <ul className="mt-2 space-y-1 text-sm">
-            <li>Sabine Ziehn - 03601 401540</li>
-            <li>Anika Bierwirth (Assistenz der Geschaeftsleitung, Sekretariat) - 03601 401540</li>
-            <li>Beatrix Kaempfe (Stellv. Vorstandsvorsitzende, QM-Beauftragte) - 03601 401540</li>
-            <li>Silke Breitbarth - 03601 401540</li>
-            <li>Sabine Trautmann (Vorstandsmitglied, Teamleiterin Weiterbildung) - 03601 401540</li>
-            <li>Marion Beckmann - 03601 401549</li>
-            <li>Mareen Winterberg - 03601 401549</li>
+            <li>Sabine Musterfrau - 01234 567890</li>
+            <li>Anika Musterfrau (Assistenz der Geschaeftsleitung, Sekretariat) - 01234 567890</li>
+            <li>Beatrix Mustermann (Stellv. Vorstandsvorsitzende, QM-Beauftragte) - 01234 567890</li>
+            <li>Silke Musterfrau - 01234 567890</li>
+            <li>Sabine Mustermann (Vorstandsmitglied, Teamleiterin Weiterbildung) - 01234 567890</li>
+            <li>Marion Musterfrau - 01234 567899</li>
+            <li>Mareen Musterfrau - 01234 567899</li>
           </ul>
         </div>
         <ContactForm />

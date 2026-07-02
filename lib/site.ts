@@ -1,20 +1,20 @@
-﻿export const siteConfig = {
-  websiteName: "Bildungszentrum Handel/Gewerbe/Freie Berufe e.V.",
-  domain: "https://bz-muehlhausen.de",
+export const siteConfig = {
+  websiteName: "Muster-Bildungszentrum e.V.",
+  domain: "https://muster-bildungszentrum.de",
   tagline: "ENTDECKE DEINE CHANCEN",
   purpose:
-    "Informationen, Kursangebote, Bildungsgange und Kontaktmoeglichkeiten rund um Schulabschluss, Berufsausbildung, Berufsorientierung und Weiterbildung in Muehlhausen.",
+    "Informationen, Kursangebote, Bildungsgange und Kontaktmoeglichkeiten rund um Schulabschluss, Berufsausbildung, Berufsorientierung und Weiterbildung in Musterstadt.",
   targetAudience:
-    "SchÃ¼lerinnen und SchÃ¼ler, Auszubildende, junge Erwachsene, Arbeitssuchende sowie Teilnehmende an MaÃŸnahmen der beruflichen Bildung und Integration.",
+    "Schülerinnen und Schüler, Auszubildende, junge Erwachsene, Arbeitssuchende sowie Teilnehmende an Maßnahmen der beruflichen Bildung und Integration.",
   industry: "Berufliche Bildung / Weiterbildung / Berufsorientierung",
   business: {
-    companyName: "Bildungszentrum Handel/Gewerbe/Freie Berufe e.V.",
-    founders: "GrÃ¼ndung des Vereins: Dezember 1990",
-    location: "Muehlhausen/Thueringen, Germany",
-    address: "Bei der Breitsuelze 1, 99974 Muehlhausen",
-    phone: "03601 401540",
-    fax: "03601 401544",
-    email: "information@bz-muehlhausen.de",
+    companyName: "Muster-Bildungszentrum e.V.",
+    founders: "Gründung des Vereins: Januar 2000",
+    location: "Musterstadt/Sachsen, Germany",
+    address: "Musterstraße 42, 12345 Musterstadt",
+    phone: "01234 567890",
+    fax: "01234 567891",
+    email: "info@muster-bildungszentrum.de",
     social: "Facebook/Instagram handles are not publicly visible.",
     legalPages: ["Impressum", "Datenschutzerklaerung", "AGB"]
   },
@@ -60,12 +60,12 @@
   },
   seo: {
     keywords: [
-      "Bildungszentrum Muehlhausen",
-      "Schulabschluss Muehlhausen",
-      "Berufsausbildung Muehlhausen",
-      "Berufsorientierung Muehlhausen",
-      "Weiterbildung Muehlhausen",
-      "Integrationskurs Muehlhausen"
+      "Bildungszentrum Musterstadt",
+      "Schulabschluss Musterstadt",
+      "Berufsausbildung Musterstadt",
+      "Berufsorientierung Musterstadt",
+      "Weiterbildung Musterstadt",
+      "Integrationskurs Musterstadt"
     ],
     meta: "Not publicly visible.",
     contentStructure:
@@ -83,7 +83,7 @@
     "Lead-generation and booking website. Revenue is generated offline through course fees, driving lessons, and government-funded training programs.",
   competition: {
     competitors:
-      "Local driving schools in the Unstrut-Hainich district and national chains such as DEKRA Akademie and TUEV Rheinland Akademie in Thueringen.",
+      "Local training centers in the district and national chains in the state.",
     advantages:
       "One-stop-shop for private individuals and B2B logistics clients.",
     weaknesses:

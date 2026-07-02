@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Script from "next/script";
 import { Kalam, Patrick_Hand } from "next/font/google";
 import "./globals.css";
@@ -6,6 +6,7 @@ import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { CookieBanner } from "@/components/cookie-banner";
 import { MobileRegisterButton } from "@/components/mobile-register-button";
+import { BackgroundDecorations } from "@/components/background-decorations";
 import { siteConfig } from "@/lib/site";
 
 const headingFont = Kalam({
@@ -51,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         name: siteConfig.websiteName,
         url: siteConfig.domain,
         description: siteConfig.purpose,
-        areaServed: "Muehlhausen, Thueringen, Germany"
+        areaServed: "Musterstadt, Sachsen, Germany"
       },
       {
         "@type": "LocalBusiness",
@@ -60,8 +61,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         telephone: siteConfig.business.phone,
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Muehlhausen",
-          addressRegion: "Thueringen",
+          addressLocality: "Musterstadt",
+          addressRegion: "Sachsen",
           addressCountry: "DE"
         }
       }
@@ -70,11 +71,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
   return (
     <html lang="de" suppressHydrationWarning>
-      <body className={`${headingFont.variable} ${bodyFont.variable}`}>
+      <body className={`${headingFont.variable} ${bodyFont.variable} relative min-h-screen`}>
         <Script id="theme-init" strategy="beforeInteractive" dangerouslySetInnerHTML={{ __html: themeInitScript }} />
-        <SiteHeader />
-        <main>{children}</main>
-        <SiteFooter />
+        <BackgroundDecorations />
+        <div className="relative z-10">
+          <SiteHeader />
+          <main className="page-reveal">{children}</main>
+          <SiteFooter />
+        </div>
         <CookieBanner />
         <MobileRegisterButton />
         <Script id="jsonld" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -82,4 +86,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-

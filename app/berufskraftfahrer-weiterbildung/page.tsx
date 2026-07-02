@@ -1,4 +1,4 @@
-﻿import { CtaBlock } from "@/components/cta-block";
+import { CtaBlock } from "@/components/cta-block";
 import { buildMetadata } from "@/lib/seo";
 import { BadgeCheck, BookOpenCheck, Wallet } from "lucide-react";
 import { wobblyMd, wobblySm } from "@/lib/design";
@@ -6,7 +6,7 @@ import { wobblyMd, wobblySm } from "@/lib/design";
 export const metadata = buildMetadata({
   title: "Berufsausbildung",
   description:
-    "Berufsausbildung fuer Jugendliche und junge Erwachsene im Bildungszentrum Muehlhausen.",
+    "Berufsausbildung fuer Jugendliche und junge Erwachsene im Bildungszentrum Musterstadt.",
   path: "/berufskraftfahrer-weiterbildung"
 });
 

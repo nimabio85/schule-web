@@ -1,11 +1,11 @@
-﻿import { CtaBlock } from "@/components/cta-block";
+import { CtaBlock } from "@/components/cta-block";
 import { buildMetadata } from "@/lib/seo";
 import { AlertTriangle, RefreshCcw, Scale } from "lucide-react";
 import { wobblyMd, wobblySm } from "@/lib/design";
 
 export const metadata = buildMetadata({
   title: "Weiterbildung",
-  description: "Weiterbildungsangebote in Vollzeit und berufsbegleitend im Bildungszentrum Muehlhausen.",
+  description: "Weiterbildungsangebote in Vollzeit und berufsbegleitend im Bildungszentrum Musterstadt.",
   path: "/adr-gefahrgut"
 });
 

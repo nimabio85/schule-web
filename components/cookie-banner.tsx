@@ -1,10 +1,10 @@
-﻿"use client";
+"use client";
 
 import { useEffect, useState } from "react";
 import { Cookie } from "lucide-react";
 import { wobblyMd } from "@/lib/design";
 
-const CONSENT_KEY = "bz_muehlhausen_cookie_consent";
+const CONSENT_KEY = "school_website_cookie_consent";
 
 export function CookieBanner() {
   const [show, setShow] = useState(false);
