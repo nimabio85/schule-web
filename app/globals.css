@@ -45,6 +45,10 @@ body {
   background-size: 24px 24px;
 }
 
+.dark body {
+  background-image: none;
+}
+
 p {
   @apply leading-relaxed;
 }

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Bus, Car, Truck, Wrench } from "lucide-react";
 import { CtaBlock } from "@/components/cta-block";
-import { ScrollDrawingArrow } from "@/components/scroll-drawing-arrow";
 import { buildMetadata } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 import { hardShadowLg, wobblyMd, wobblySm } from "@/lib/design";
@@ -29,7 +28,12 @@ export default function HomePage() {
           <p className="mt-3 text-sm">{siteConfig.purpose}</p>
           <p className="mt-3 text-sm"><strong>Target audience:</strong> {siteConfig.targetAudience}</p>
           <p className="mt-3 text-sm"><strong>Industry:</strong> {siteConfig.industry}</p>
-          <ScrollDrawingArrow />
+          <div className="mt-4 hidden md:block text-pencil">
+            <svg width="180" height="60" viewBox="0 0 180 60" fill="none" aria-hidden="true" className="overflow-visible">
+              <path d="M2 10 C 50 40, 100 0, 175 30" stroke="currentColor" strokeWidth="3" className="animate-dash-flow" />
+              <path d="M160 22 L175 30 L158 36" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </div>
         </div>
       </section>
 
@@ -74,7 +78,7 @@ export default function HomePage() {
           <h2 className="heading-note text-3xl md:text-4xl">Entdecke deine Chancen</h2>
           <p className="mt-3 text-sm"><strong>Schulabschluss:</strong> Die besondere Chance fuer den Einstieg in die Zukunft.</p>
           <p className="mt-2 text-sm"><strong>Berufsausbildung:</strong> Wir bilden im Auftrag der Agentur fuer Arbeit in den Bereichen Handel, Lager, Gastronomie und Hauswirtschaft aus.</p>
-          <p className="mt-2 text-sm"><strong>Berufsorientierung:</strong> Berufsfelderkundung und Berufsfelderprobung in Musterstadt und Nachbarstadt.</p>
+          <p className="mt-2 text-sm"><strong>Berufsorientierung:</strong> Berufsfelderkundung und Berufsfelderprobung in Musterstadt and Nachbarstadt.</p>
           <p className="mt-2 text-sm"><strong>Weiterbildung:</strong> Angebote in Vollzeit und berufsbegleitend, auch fuer Mitarbeiterqualifizierung.</p>
         </div>
       </section>
@@ -93,5 +97,3 @@ export default function HomePage() {
     </>
   );
 }
-
-

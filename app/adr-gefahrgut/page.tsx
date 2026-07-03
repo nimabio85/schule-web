@@ -23,12 +23,10 @@ export default function AdrPage() {
           <p className="mt-2 card rotate-1 text-sm" style={{ borderRadius: wobblyMd }}><span className="inline-flex h-9 w-9 items-center justify-center border-[3px] border-pencil bg-white mb-2 mr-3" style={{ borderRadius: wobblySm }}><RefreshCcw size={17} strokeWidth={2.8} /></span>Angebote fuer Personen, Bedarfsgemeinschaften und Familien im Kontext von Agentur fuer Arbeit und Jobcenter.</p>
 
           <h2 className="mt-6 heading-note text-2xl md:text-3xl">Qualitaet und Zulassung</h2>
-          <p className="mt-2 card -rotate-1 text-sm" style={{ borderRadius: wobblyMd }}><span className="inline-flex h-9 w-9 items-center justify-center border-[3px] border-pencil bg-white mb-2 mr-3" style={{ borderRadius: wobblySm }}><Scale size={17} strokeWidth={2.8} /></span>Qualitaetsmanagement nach DIN EN ISO 9001:2015 und AZAV-zugelassener Traeger.</p>
+          <p className="mt-2 card -rotate-1 text-sm" style={{ borderRadius: wobblyMd }}><span className="inline-flex h-9 w-9 items-center justify-center border-[3px] border-pencil bg-white mb-2 mr-3" style={{ borderRadius: wobblySm }}><Scale size={17} strokeWidth={2.8} /></span>Qualitaetsmanagement nach DIN EN ISO 9001:2015 and AZAV-zugelassener Traeger.</p>
         </div>
       </section>
       <CtaBlock text="Kontakt aufnehmen fuer individuelle Weiterbildungsangebote." />
     </>
   );
 }
-
-

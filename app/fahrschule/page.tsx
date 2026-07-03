@@ -1,4 +1,4 @@
-﻿import { CtaBlock } from "@/components/cta-block";
+import { CtaBlock } from "@/components/cta-block";
 import { buildMetadata } from "@/lib/seo";
 import { Car, Truck, Bike, Bus } from "lucide-react";
 import { wobblyMd, wobblySm } from "@/lib/design";
@@ -31,5 +31,3 @@ export default function FahrschulePage() {
     </>
   );
 }
-
-
