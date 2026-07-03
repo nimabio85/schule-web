@@ -58,12 +58,8 @@ Ensure you have **Node.js LTS** (version 18+ or 20+ recommended) installed on yo
 
 ### Running the Application
 
-* **Development Mode (Windows / Command Line):**
-  You can run the interactive batch file to automatically handle port assignment and open the browser:
-  ```cmd
-  run.bat
-  ```
-  Or run the standard dev command:
+* **Development Mode:**
+  Run the standard development command:
   ```bash
   npm run dev
   ```
@@ -91,7 +87,6 @@ Ensure you have **Node.js LTS** (version 18+ or 20+ recommended) installed on yo
 ├── lib/                  # Utilities (Site config, SEO helper, validation, email)
 ├── public/               # Static assets (images, fonts, sitemap)
 ├── .gitignore            # Git exclusion rules (ignores secrets & local builds)
-├── run.bat               # Windows automation startup script
 ├── package.json          # Node dependency definitions
 └── tsconfig.json         # TypeScript configuration compiler options
 ```
